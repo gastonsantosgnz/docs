@@ -1,0 +1,83 @@
+/* Variables de colores personalizados */
+:root {
+  --background: #1c1824; /* Fondo principal oscuro */
+  --foreground: #FFFFFF; /* Color de texto principal */
+  --accent-green: #66c525; /* Verde principal usado en botones y enlaces */
+  --accent-purple: #5D26C1; /* Morado para hover */
+}
+
+/* Clases de utilidad para opacidades */
+.text-white-60 {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.text-white-70 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bg-accent-10 {
+  background-color: rgba(102, 197, 37, 0.1);
+}
+
+.bg-accent-20 {
+  background-color: rgba(102, 197, 37, 0.2);
+}
+
+/* Estilo para enlaces y botones */
+a {
+  color: var(--accent-green);
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Mejoras para modo oscuro */
+.dark-mode {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Ajustes de logo */
+.logo-container img {
+  max-height: 80px !important; /* Aumentado de 60px a 80px */
+  width: auto;
+}
+
+/* Estilo para elementos de navegación */
+.nav-item.active {
+  border-color: var(--accent-green) !important;
+}
+
+/* Estilos para botones primarios */
+.primary-button {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.5rem !important;
+  background-color: var(--accent-green) !important;
+  color: var(--background) !important;
+  font-size: 0.875rem !important;
+  font-weight: 700 !important;
+  transition: all 500ms !important;
+  text-transform: none !important;
+}
+
+.primary-button:hover {
+  background-color: var(--accent-purple) !important;
+  color: white !important;
+}
+
+/* Botón con menos bordes redondeados */
+.less-rounded {
+  border-radius: 0.25rem !important;
+}
+
+/* Ajustes responsivos para el logo */
+@media (min-width: 768px) {
+  .logo-container img {
+    max-height: 100px !important; /* Aún más grande en desktop */
+  }
+} 

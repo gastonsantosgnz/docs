@@ -1,55 +1,41 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Guía de Admisiones",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
+    "primary": "#66c525",
+    "light": "#8ad85a",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/superfy-ico.ico",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "UABC",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Información General",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "uabc/carreras",
+              "uabc/convocatorias",
+              "uabc/proceso-admision",
+              "uabc/guia-estudio",
+              "uabc/examen-admision",
+              "uabc/recomendaciones"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "PFLC",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Información General",
             "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "pflc/convocatorias",
+              "pflc/capacitaciones",
+              "pflc/proceso-admision",
+              "pflc/guia-estudio"
             ]
           }
         ]
@@ -58,45 +44,30 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://www.superfy.pro/blog",
           "icon": "newspaper"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/superfy-header.png",
+    "dark": "/logo/superfy-header.png",
+    "height": 100
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Abrir app",
+      "href": "https://app.superfy.pro/",
+      "className": "primary-button less-rounded"
     }
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "copyright": "© 2024 Superfy. Todos los derechos reservados."
+  },
+  "style": {
+    "css": "/custom.css"
   }
 }
