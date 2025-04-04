@@ -32,9 +32,23 @@
           {
             "group": "Información General",
             "pages": [
+              "pflc/informacion-general",
               "pflc/convocatorias",
-              "pflc/capacitaciones",
-              "pflc/proceso-admision",
+              "pflc/capacitaciones"
+            ]
+          },
+          {
+            "group": "Proceso de Admisión",
+            "pages": [
+              "pflc/admision",
+              "pflc/admision/fechas-importantes",
+              "pflc/admision/costos",
+              "pflc/admision/preguntas-frecuentes"
+            ]
+          },
+          {
+            "group": "Preparación",
+            "pages": [
               "pflc/guia-estudio"
             ]
           }
